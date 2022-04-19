@@ -1,6 +1,6 @@
 # IFC Visualiser
 An IFC explorer in the browser, written hastily in 6 hours for Centre for Digital Built Britian 
-Hackathon in March 2022 ([devpost](https://devpost.com/software/fibe)).
+Hackathon in March 2022: [Can Data Save the World? Climate Data Connectivity](https://www.cdbb.cam.ac.uk/events/hackathon-can-data-save-world-climate-data-connectivity), [devpost entry](https://devpost.com/software/fibe)
 
 ![Can data save the world?](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/860/054/datas/original.png)
 
