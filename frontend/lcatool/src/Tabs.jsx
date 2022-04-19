@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 import './styles.scss';
 import TreeMap from "react-d3-treemap";
-// Include its styles in you build process as well
 import "react-d3-treemap/dist/react.d3.treemap.css";
 import ReactResizeDetector from 'react-resize-detector';
 import { FaPen, FaDownload } from 'react-icons/fa';
-// import { Dropdown, DropdownButton } from 'react-bootstrap';
 import { OBJModel } from 'react-3d-viewer';
 import {
     CircularProgressbar,
@@ -71,6 +69,7 @@ class Tabs extends React.Component {
 
     render() {
 
+        // these are returned from the backend, here are two examples for demoing without the backend
         let exampledata = {
             name: "IFC Components",
             children: [
@@ -92,25 +91,15 @@ class Tabs extends React.Component {
             children: [
 
                 { name: "Glass", value: 146 },
-
                 { name: "Aluminium", value: 351 },
-
                 { name: "Metal - Stainless Steel", value: 1 },
-
                 { name: "Metal - Painted - Grey", value: 1 },
-
                 { name: "Door - Frame", value: 40 },
-
                 { name: "Door - Panel", value: 40 },
-
                 { name: "Paint - Sienna", value: 13 },
-
                 { name: "Wood - Birch - Solid Stained Light Low Gloss", value: 13 },
-
                 { name: "Wood - Birch", value: 22 },
-
                 { name: "Metal - Steel 43-275", value: 1 },
-
                 { name: "Unnamed", value: 2 },
 
             ],
@@ -234,8 +223,6 @@ class Tabs extends React.Component {
                                                         <CircularProgressbar
                                                             value={value}
                                                             text={`${roundedValue}%`}
-                                                            /* This is important to include, because if you're fully managing the
-                                                        animation yourself, you'll want to disable the CSS animation. */
                                                             styles={buildStyles({ pathTransition: "none" })}
                                                         />
                                                         <div style={{ fontSize: 24 }}>{this.state.statText[0]}</div>
@@ -259,8 +246,6 @@ class Tabs extends React.Component {
                                                         <CircularProgressbar
                                                             value={value}
                                                             text={`${roundedValue}%`}
-                                                            /* This is important to include, because if you're fully managing the
-                                                        animation yourself, you'll want to disable the CSS animation. */
                                                             styles={buildStyles({ pathTransition: "none" })}
                                                         />
                                                         <div style={{ fontSize: 24 }}>{this.state.statText[1]}</div>
@@ -284,8 +269,6 @@ class Tabs extends React.Component {
                                                         <CircularProgressbar
                                                             value={value}
                                                             text={`${roundedValue}%`}
-                                                            /* This is important to include, because if you're fully managing the
-                                                        animation yourself, you'll want to disable the CSS animation. */
                                                             styles={buildStyles({ pathTransition: "none" })}
                                                         />
                                                         <div style={{ fontSize: 24 }}>{this.state.statText[2]}</div>
